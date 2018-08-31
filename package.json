@@ -1,6 +1,6 @@
 {
   "name": "covee-protocol",
-  "version": "0.70",
+  "version": "0.7.0",
   "description": "Covee protocol for decentralized teamwork.",
   "keywords": ["Covee", "protocol", "decentralized teamwork", "future of work"],
   "author": "Covee Network AG <info@covee.network>",
@@ -9,6 +9,9 @@
   "main": "./tools/server/index.js",
   "private": true,
   "license": "AGPL",
+  "main": {
+    "protocol": "./index.js"
+  },
   "engines": {
     "node": "^8.x"
   },
@@ -33,7 +36,7 @@
     "clean": "shx rm -fr db dist build bin coverage*",
     "reset": "yarn run clean && shx rm -fr node_modules",
     "upgrade": "yarn run reset; yarn upgrade",
-    "postinstall": "node ./tools/hashChecker.js"
+    "postinstall": "node ./tools/hashChecker.js && npm run compile"
   },
   "dependencies": {
     "chalk": "^2.3.0",
