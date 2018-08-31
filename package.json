@@ -36,7 +36,7 @@
     "clean": "shx rm -fr db dist build bin coverage*",
     "reset": "yarn run clean && shx rm -fr node_modules",
     "upgrade": "yarn run reset; yarn upgrade",
-    "postinstall": "node ./tools/hashChecker.js && npm run compile"
+    "postinstall": "npm run compile"
   },
   "dependencies": {
     "chalk": "^2.3.0",
