@@ -2,16 +2,20 @@
   "name": "covee-protocol",
   "version": "0.7.0",
   "description": "Covee protocol for decentralized teamwork.",
-  "keywords": ["Covee", "protocol", "decentralized teamwork", "future of work"],
+  "keywords": [
+    "Covee",
+    "protocol",
+    "decentralized teamwork",
+    "future of work"
+  ],
   "author": "Covee Network AG <info@covee.network>",
   "contributors": "Validity Labs AG <info@validitylabs.org>",
   "homepage": "https://github.com/coveenetwork/protocol",
-  "main": "./tools/server/index.js",
-  "private": true,
-  "license": "AGPL",
   "main": {
     "protocol": "./index.js"
   },
+  "private": true,
+  "license": "AGPL",
   "engines": {
     "node": "^8.x"
   },
@@ -59,7 +63,7 @@
     "chai-as-promised": "^7.1.1",
     "chai-bignumber": "^2.0.2",
     "colors": "^1.1.2",
-    "cross-env": "^5.1.3",
+    "cross-env": "^5.2.0",
     "eslint": "^4.12.1",
     "eslint-config-xo": "^0.19.0",
     "eslint-plugin-babel": "^4.1.2",
